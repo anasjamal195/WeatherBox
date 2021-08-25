@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/WeatherBox/static/css/main.c1d3fb88.chunk.css",
+    "main.js": "/WeatherBox/static/js/main.2c26213e.chunk.js",
+    "main.js.map": "/WeatherBox/static/js/main.2c26213e.chunk.js.map",
+    "runtime-main.js": "/WeatherBox/static/js/runtime-main.665376da.js",
+    "runtime-main.js.map": "/WeatherBox/static/js/runtime-main.665376da.js.map",
+    "static/js/2.47d52b71.chunk.js": "/WeatherBox/static/js/2.47d52b71.chunk.js",
+    "static/js/2.47d52b71.chunk.js.map": "/WeatherBox/static/js/2.47d52b71.chunk.js.map",
+    "static/js/3.3ca46426.chunk.js": "/WeatherBox/static/js/3.3ca46426.chunk.js",
+    "static/js/3.3ca46426.chunk.js.map": "/WeatherBox/static/js/3.3ca46426.chunk.js.map",
+    "index.html": "/WeatherBox/index.html",
+    "static/css/main.c1d3fb88.chunk.css.map": "/WeatherBox/static/css/main.c1d3fb88.chunk.css.map",
+    "static/js/2.47d52b71.chunk.js.LICENSE.txt": "/WeatherBox/static/js/2.47d52b71.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/WeatherBox/static/media/icon.1d6efe99.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.665376da.js",
+    "static/js/2.47d52b71.chunk.js",
+    "static/css/main.c1d3fb88.chunk.css",
+    "static/js/main.2c26213e.chunk.js"
+  ]
+}
