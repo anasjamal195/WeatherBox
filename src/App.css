@@ -1,0 +1,142 @@
+.App {
+  overflow: hidden;
+  text-shadow: 3px 3px 5px black;
+  background-color: rgba(0,0,0,0.5);
+  font-family: 'Verdana';
+  text-align: center;
+  color :white;
+  height: 100vh;
+  width:100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: bgAnim 2s ease-in;
+  
+}.startScreen{
+  position:absolute;
+  font-size: 500%;
+  font-family: 'Gothic', serif;
+  font-style: italic;
+  background-image: url('./img/icon.png');
+  background-position: center;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  top:0px;
+  display:flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  opacity:0%;
+  text-align: center;
+  background-color: rgba(0, 3, 22,0.2);
+  animation:startScreen 2s ease-out;
+}
+.row{
+  height: 100vh;
+  
+}
+.bg{
+  height: 100vh;
+  width:100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+
+}
+.bg1{
+  background-image:  url('./img/bg1.jpg');
+}
+.bg2{
+  background-image: url('./img/bg2.jpg');
+}.bg3{
+  background-image: url('./img/bg3.jpg');
+}.bg4{
+  background-image: url('./img/bg4.jpg');
+}.bg5{
+  background-image:url('./img/bg5.jpg');
+}.bg6{
+  background-image:url('./img/bg6.jpg');
+
+}
+
+
+
+.search{
+  position:relative;
+  box-shadow: 5px 5px 10px black;
+  background-color: rgba(0,0,0,0.2);
+  animation: fade_in_search 3s ease-in;
+  transition: 0.2s linear;
+}
+.search:focus{
+  background-color: rgba(0,0,0,0.9);
+}
+.weather{
+height:80vh;
+position :relative;
+animation: fade_in_weather 1s ease-out;
+
+}.weatherHolder{
+ 
+
+ width: 30vw;
+ height: 50vh;
+
+}
+.dateTime{
+  position: relative;
+  font-size: 200%;
+  animation: fade_in_clock 3s ease-out;
+  border-bottom: 1px white solid;
+  color :rgba(255,255,255,0.7);
+  width: 20vw;
+  height: 20vh;
+  
+}
+.date{
+  font-size: 70%;
+  
+}
+.weatherDetail{
+  position :relative;
+  animation: fade_in_details 1s ease-in;
+  font-size: 120%;
+  width: 30vw;
+  height: 60vh;
+ 
+  
+}.location{
+  font-size: 130%;
+ 
+
+}.day{
+  font-size: 80%;
+}.temp{
+  font-size: 250%;
+  border-top:  1px solid white;
+  border-bottom: 1px double white;
+}
+.weatherCondition{
+  font-size: 50%;
+}
+@keyframes fade_in_clock{
+  from{color: transparent;left:-30vw;}
+  to{color: rgba(255,255,255,0.7);left:0vw;}
+}@keyframes fade_in_weather {
+  from{top:-50vh;}
+  to{top:0vh}
+}@keyframes fade_in_details {
+  from{right:-30vw;}
+  to{right:0vw;}
+}
+@keyframes fade_in_search{
+  from{background-color: black;top:-20vh;}
+  to{background-color:  rgba(0,0,0,0.2);top:0vh}
+}@keyframes bgAnim{
+  from{background-color: black;}
+  to{background-color: rgba(0,0,0,0.5);}
+}@keyframes startScreen{
+  0%{opacity:100%;}
+  70%{opacity:100%;}
+  100%{opacity: 0%;display:none;}
+}
