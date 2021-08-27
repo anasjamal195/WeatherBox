@@ -2,11 +2,7 @@ import './App.css';
 import React, { useState } from 'react';
 
 
-
-
-
 function App() {
-  const [bg] = useState('bg bg' +(Math.floor(Math.random()*5)+1));
   
   /*const api = {
     key: '3dd7824a049a021a9d9f12888b3fd4ce',
@@ -37,12 +33,9 @@ function App() {
 
  
   return (
-    <div className={bg}>
-      <div className = "App">
+      <div className = "App bg">
         <div className = 'startScreen'></div>
       <div className="container ">
-
-
         <div className="row ">
           <div className="col-md-3 d-flex ">
             <div className='container dateTime my-5 d-flex flex-column justify-content-center'>
@@ -52,25 +45,27 @@ function App() {
           </div>
           <div className="col-md-6  ">
 
-            <div className="container my-3">
+            <div className="container d-flex flex-row align-items-center my-3">
               <input
                 className="form-control  text-light search"
                 onChange = {(e)=>{setQuerry(e.target.value)}}
                 value = {querry}
                 placeholder='Search...'
-                onKeyPress={(e) => {
-                  if (e.code === 'Enter' && querry !== '') {
+                >
+
+
+
+              </input>
+              <button className = "btn btn-primary btn-search my-3 mx-3 btn-sm" onClick = {
+                () => {
+                  if (querry !== '') {
                   
 
                     setenterPressed(1);
                   weatherHandler(querry);   
                   
                 }
-                }
-                }>
-
-
-              </input>
+                }}>Search</button>
             </div>
                 {Object.entries(weather).length !== 0 &&  weather.weather?
                 
@@ -129,7 +124,7 @@ function App() {
 
 
 
-    </div>
+    
   );
 }
 

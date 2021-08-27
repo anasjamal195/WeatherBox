@@ -40,22 +40,8 @@
   width:100vw;
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: url('./img/bg.jpg');
   
-
-}
-.bg1{
-  background-image:  url('./img/bg1.jpg');
-}
-.bg2{
-  background-image: url('./img/bg2.jpg');
-}.bg3{
-  background-image: url('./img/bg3.jpg');
-}.bg4{
-  background-image: url('./img/bg4.jpg');
-}.bg5{
-  background-image:url('./img/bg5.jpg');
-}.bg6{
-  background-image:url('./img/bg6.jpg');
 
 }
 
@@ -68,9 +54,18 @@
   animation: fade_in_search 3s ease-in;
   transition: 0.2s linear;
 }
+.btn-search{
+  position:relative;
+  box-shadow: 5px 5px 10px black;
+  background-color: rgba(0,0,0,0.2);
+  animation: fade_in_search 3s ease-in;
+  transition: 0.2s linear;
+  border:none;
+}
 .search:focus{
   background-color: rgba(0,0,0,0.9);
 }
+
 .weather{
 height:80vh;
 position :relative;
